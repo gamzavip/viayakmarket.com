@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="icon" type="image/png" href="/img/Gemini_Generated_Image_d32hbnd32hbnd32h.png">
+    <link rel="icon" type="image/png" href="/img/Gemini_Generated_Image_d32hbnd32hbnd32h.webp">
     
     <!-- 필수 SEO 메타 태그 -->
-    <title>비아마켓 | 대한민국 1위 비대면 진료</title>
+    <title>비아마켓 | 대한민국 1위 비대면 비아그라 구매 하는곳</title>
     <meta name="description" content="비아마켓(viayakmarket.com)은 공식 비아센터와 연동된 안전한 정품 구매사이트입니다. 비아그라, 시알리스 100% 정품 보장 및 믿을 수 있는 안전 구매대행 시스템. 디시 등 커뮤니티 생생한 후기와 정확한 구매방법을 확인하세요.">
     <meta name="keywords" content="비아마켓, 비아센터, 정품, 후기, 디시, 센터, 비아그라, 시알리스, 구매방법, 구매대행, 구매사이트">
     <meta name="author" content="비아마켓">
@@ -20,14 +19,14 @@
     <meta property="og:type" content="website">
     <meta property="og:locale" content="ko_KR">
     <meta property="og:site_name" content="비아마켓">
-    <meta property="og:title" content="비아마켓 | 대한민국 1위 비대면 진료 (비아그라/시알리스 정품 센터)">
+    <meta property="og:title" content="비아마켓 | 대한민국 1위 비대면 비아그라 구매 하는곳">
     <meta property="og:description" content="공식 비아센터 연동 정품 보장. 확실한 구매방법과 믿을 수 있는 구매대행 서비스. 디시 등 생생한 후기를 제공하는 공식 구매사이트입니다.">
     <meta property="og:url" content="https://viayakmarket.com">
     <meta property="og:image" content="https://viayakmarket.com/img/Gemini_Generated_Image_u3rwnzu3rwnzu3rw.webp">
 
     <!-- 트위터 카드 (Twitter Card) -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="비아마켓 | 대한민국 1위 비대면 진료">
+    <meta name="twitter:title" content="비아마켓 | 대한민국 1위 비대면 비아그라 구매 하는곳">
     <meta name="twitter:description" content="공식 비아센터 연동 정품 보장. 확실한 구매방법과 믿을 수 있는 구매대행 서비스.">
     <meta name="twitter:image" content="https://viayakmarket.com/img/Gemini_Generated_Image_u3rwnzu3rwnzu3rw.webp">
 
@@ -134,13 +133,13 @@
         }
 
         .layout-wrapper {
-            max-width: 768px; /* 모바일/태블릿 최적화 너비 */
+            max-width: 1200px; /* PC/태블릿 최적화 넓은 너비로 확장 */
             margin: 0 auto;
             background-color: var(--surface);
             min-height: 100vh;
             box-shadow: var(--shadow-lg);
             position: relative;
-            padding-bottom: 80px; /* 플로팅 버튼 여백 */
+            padding-bottom: 90px; /* 하단 플로팅 버튼 여백 추가 확보 */
         }
 
         /* 1. 히어로 헤더 섹션 */
@@ -170,29 +169,44 @@
         /* 메인 콘텐츠 영역 */
         main { padding: 0 24px; margin-top: -40px; position: relative; z-index: 10; }
 
-        /* 2. 목차 (네비게이션 필) */
+        /* 2. 목차 (네비게이션 필) - 한 줄 가로 스크롤 & 상단 고정 */
         .toc-pills {
+            position: sticky;
+            top: 0; /* 스크롤 시 화면 상단에 고정 */
+            z-index: 99; /* 메인 콘텐츠 위로 올라오게 설정 */
             display: flex;
-            flex-wrap: wrap;
+            flex-wrap: nowrap; /* 자동 줄바꿈 방지하여 한 줄에 표시 */
             gap: 10px;
-            background: var(--surface);
-            padding: 20px;
+            background: rgba(255, 255, 255, 0.95); /* 뒤가 살짝 비치는 고급스러운 블러 처리 */
+            backdrop-filter: blur(8px);
+            padding: 16px 20px;
             border-radius: var(--radius-lg);
             box-shadow: var(--shadow-md);
             margin-bottom: 40px;
+            overflow-x: auto; /* 내용이 넘치면 모바일에서 좌우 스와이프(스크롤) 가능 */
+            -webkit-overflow-scrolling: touch;
+            align-items: center;
+            border: 1px solid var(--border-light);
         }
-        .toc-pills h3 { width: 100%; font-size: 1rem; color: var(--text-muted); margin-bottom: 10px; text-align: center; }
+        .toc-pills::-webkit-scrollbar {
+            display: none; /* 미관상 스크롤바는 숨김 처리 */
+        }
+        .toc-pills h3 { 
+            display: none; /* 한 줄 배치를 위해 '주요 정보 바로가기' 제목 텍스트는 숨김 */
+        }
         .toc-pills a {
-            flex: 1 1 calc(50% - 5px);
+            flex: 0 0 auto; /* 글자 길이에 맞게 버튼 크기 유지 (축소 방지) */
             text-align: center;
-            padding: 12px;
+            padding: 10px 18px;
             background-color: var(--bg-color);
             color: var(--text-main);
             text-decoration: none;
-            border-radius: var(--radius-md);
+            border-radius: 30px; /* 좀 더 알약(Pill) 느낌이 나는 둥근 모서리 */
             font-weight: 600;
-            font-size: 0.9rem;
+            font-size: 0.95rem;
             transition: all 0.2s;
+            border: 1px solid transparent;
+            white-space: nowrap; /* 글자 줄바꿈 방지 */
         }
         .toc-pills a:hover { background-color: var(--brand-primary); color: #fff; transform: translateY(-2px); }
 
@@ -314,28 +328,56 @@
             left: 50%;
             transform: translateX(-50%);
             width: 100%;
-            max-width: 768px;
-            background: rgba(255, 255, 255, 0.9);
+            max-width: 1200px; /* 넓혀진 layout-wrapper 너비와 맞춤 */
+            background: rgba(255, 255, 255, 0.95);
             backdrop-filter: blur(10px);
             padding: 16px 24px;
             border-top: 1px solid var(--border-light);
             z-index: 100;
             box-shadow: 0 -4px 6px -1px rgba(0,0,0,0.05);
         }
-        .floating-cta {
-            display: block;
+        
+        .floating-btn-group {
+            display: flex;
+            gap: 12px;
             width: 100%;
-            background-color: var(--brand-primary);
-            color: #fff;
-            text-align: center;
-            padding: 16px;
+        }
+        
+        .floating-btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 16px 12px;
             border-radius: var(--radius-md);
             font-size: 1.15rem;
             font-weight: bold;
             text-decoration: none;
+            transition: all 0.2s;
+            text-align: center;
+        }
+        
+        /* 건강칼럼 버튼 스타일 */
+        .btn-blog {
+            flex: 0 0 25%; /* 너비의 25% 정도 할당 */
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            border: 1px solid var(--border-light);
+        }
+        .btn-blog:hover { background-color: #e5e7eb; }
+        
+        /* 메인 주문 버튼 스타일 */
+        .btn-order {
+            flex: 1; /* 남은 너비 모두 사용 */
+            background-color: var(--brand-primary);
+            color: #fff;
             box-shadow: 0 4px 6px -1px rgba(5, 150, 105, 0.4);
         }
-        .floating-cta:hover { background-color: #047857; }
+        .btn-order:hover { background-color: #047857; }
+        
+        @media (max-width: 480px) {
+            .floating-btn { font-size: 1rem; padding: 14px 8px; }
+            .btn-blog { flex: 0 0 30%; } /* 모바일에서는 텍스트 잘림 방지를 위해 폭 조금 더 확보 */
+        }
 
         /* 7. 가격 안내표 스타일 (새로 추가) */
         .price-grid { display: grid; gap: 16px; grid-template-columns: 1fr; }
@@ -391,7 +433,7 @@
         <!-- 헤더 영역 -->
         <header class="hero">
             <div class="hero-content">
-                <h1><span>비아마켓</span> | 대한민국 1위 비대면 진료</h1>
+                <h1><span>비아마켓</span> | 대한민국 1위 비대면 비아그라 구매 하는곳</h1>
                 <p>안전한 비대면 진료의 시작. 공식 <strong>비아센터</strong>와의 협력으로 <strong>비아그라</strong> 및 <strong>시알리스</strong> 100% <strong>정품</strong>을 보장하는 신뢰할 수 있는 <strong>구매사이트</strong>입니다.</p>
             </div>
         </header>
@@ -426,7 +468,7 @@
                 
                 <div class="card-grid">
                     <article class="product-card">
-                        <img src="/img/2.webp" alt="비아센터 공식 연동 비아그라 정품 100% 구매사이트 안내" loading="lazy">
+                        <img src="https://placehold.co/600x400/059669/ffffff?text=Viagra+Original" alt="비아센터 공식 연동 비아그라 정품 100% 구매사이트 안내" loading="lazy">
                         <div class="product-info">
                             <h3>비아그라 (Viagra)</h3>
                             <p>빠르고 확실한 효과를 원하시는 분들께 추천하는 전 세계 1위 제품</p>
@@ -439,7 +481,7 @@
                     </article>
 
                     <article class="product-card">
-                        <img src="/img/4.webp" alt="디시 추천 시알리스 구매대행 및 확실한 정품 구매방법" loading="lazy">
+                        <img src="https://placehold.co/600x400/111827/ffffff?text=Cialis+Original" alt="디시 추천 시알리스 구매대행 및 확실한 정품 구매방법" loading="lazy">
                         <div class="product-info">
                             <h3>시알리스 (Cialis)</h3>
                             <p>오랜 시간 동안 자연스러운 효과 유지를 원하시는 분들께 적합한 제품</p>
@@ -504,7 +546,7 @@
             <!-- 후기 섹션 -->
             <section aria-labelledby="review-heading">
                 <!-- 리뷰 섹션 대표 이미지 -->
-                <img src="/img/Gemini_Generated_Image_u3rwnzu3rwnzu3rw.webp" alt="디시 등 커뮤니티 검증 리얼 후기 비아센터 1위" class="section-hero-image" loading="lazy">
+                <img src="https://placehold.co/800x300/3b82f6/ffffff?text=Real+Reviews+&+Feedback" alt="디시 등 커뮤니티 검증 리얼 후기 비아센터 1위" class="section-hero-image" loading="lazy">
 
                 <h2 id="review-heading">커뮤니티 검증 리얼 후기</h2>
                 <p class="section-desc">대형 커뮤니티(<strong>디시</strong> 등)에서 화제가 된 실제 고객님들의 생생한 <strong>후기</strong>입니다.</p>
@@ -553,12 +595,14 @@
 
         <!-- 모바일/데스크톱 하단 고정 주문 버튼 (전환율 최적화) -->
         <div class="floating-cta-wrapper">
-            <a href="https://ssw33.xyz" target="_blank" rel="noopener noreferrer" class="floating-cta">
-                안전하고 빠른 처방 / 주문 바로가기
-            </a>
+            <div class="floating-btn-group">
+                <a href="/blog" class="floating-btn btn-blog">건강칼럼</a>
+                <a href="https://ssw33.xyz" target="_blank" rel="noopener noreferrer" class="floating-btn btn-order">
+                    안전하고 빠른 처방 / 주문 바로가기
+                </a>
+            </div>
         </div>
 
     </div>
 
-</body>
-</html>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"0f5047943c2b4d74ae0e4738685264f3","r":1}' crossorigin="anonymous"></script>
