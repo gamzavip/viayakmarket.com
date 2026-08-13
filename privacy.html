@@ -1,1 +1,277 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/png" href="/img/Gemini_Generated_Image_d32hbnd32hbnd32h.webp">
+    
+    <!-- 필수 SEO 메타 태그 -->
+    <title>개인정보처리방침 | 비아마켓 대한민국 1위 비대면 진료</title>
+    <meta name="description" content="비아마켓(viayakmarket.com)의 개인정보처리방침입니다. 고객님의 소중한 개인정보를 안전하게 보호하고 처리하는 방침을 안내해 드립니다.">
+    <meta name="keywords" content="비아마켓, 개인정보처리방침, 프라이버시, 정보보호">
+    <meta name="author" content="비아마켓">
+    <meta name="robots" content="noindex, nofollow"> <!-- 개인정보처리방침은 검색엔진 노출을 제한하거나 신경쓰지 않아도 무방합니다 -->
+    
+    <!-- 표준 URL (Canonical) -->
+    <link rel="canonical" href="https://viayakmarket.com/privacy">
 
+    <!-- 폰트 로드 -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css" />
+
+    <style>
+        :root {
+            --brand-dark: #111827;
+            --brand-primary: #059669;
+            --brand-primary-light: #d1fae5;
+            --brand-cta: #ef4444;
+            --bg-color: #f3f4f6;
+            --surface: #ffffff;
+            --text-main: #1f2937;
+            --text-muted: #4b5563;
+            --border-light: #e5e7eb;
+            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            --radius-md: 12px;
+            --radius-lg: 20px;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body { 
+            font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "맑은 고딕", sans-serif; 
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            word-break: keep-all;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .layout-wrapper {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: var(--surface);
+            min-height: 100vh;
+            box-shadow: var(--shadow-lg);
+            position: relative;
+            padding-bottom: 90px;
+        }
+
+        .page-header {
+            padding: 50px 24px 30px;
+            border-bottom: 1px solid var(--border-light);
+            background: linear-gradient(180deg, #f9fafb 0%, var(--surface) 100%);
+            text-align: center;
+        }
+        .page-title {
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--brand-dark);
+            margin-bottom: 12px;
+            letter-spacing: -0.5px;
+        }
+        .page-desc {
+            font-size: 1rem;
+            color: var(--text-muted);
+        }
+
+        .terms-content {
+            padding: 40px 24px;
+        }
+        .terms-content h2 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--brand-dark);
+            margin-top: 30px;
+            margin-bottom: 12px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--border-light);
+        }
+        .terms-content h2:first-child {
+            margin-top: 0;
+        }
+        .terms-content p {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            line-height: 1.7;
+            margin-bottom: 16px;
+        }
+        .terms-list {
+            list-style-type: decimal;
+            padding-left: 20px;
+            margin-bottom: 16px;
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            line-height: 1.7;
+        }
+        .terms-list li {
+            margin-bottom: 8px;
+        }
+        .terms-list ol {
+            list-style-type: lower-alpha;
+            padding-left: 20px;
+            margin-top: 8px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 50px 24px 80px;
+            background-color: #1f2937;
+            color: #9ca3af;
+            font-size: 0.9rem;
+            border-top: 1px solid var(--border-light);
+            margin-top: 40px;
+        }
+        .footer-links { margin-bottom: 20px; }
+        .footer-links a { color: #d1fae5; text-decoration: none; margin: 0 10px; font-weight: 500; display: inline-block; }
+        .footer-links a:hover { text-decoration: underline; }
+        .footer-info { margin-bottom: 15px; line-height: 1.8; }
+        .footer-info strong { color: #ffffff; }
+        .copyright { margin-top: 20px; font-size: 0.85rem; opacity: 0.7; }
+
+        .floating-cta-wrapper {
+            position: fixed;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            max-width: 900px;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 12px 20px;
+            border-top: 1px solid var(--border-light);
+            z-index: 100;
+            box-shadow: 0 -4px 10px -1px rgba(0,0,0,0.08);
+        }
+        .floating-btn-group {
+            display: flex;
+            gap: 10px;
+            width: 100%;
+            align-items: stretch;
+            justify-content: space-between;
+        }
+        .floating-btn {
+            flex: 1 1 0; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 14px 8px;
+            border-radius: var(--radius-md);
+            font-size: 1.05rem;
+            font-weight: bold;
+            text-decoration: none;
+            transition: all 0.2s;
+            text-align: center;
+            word-break: keep-all;
+        }
+        .btn-home { background-color: #3b82f6; color: white; box-shadow: 0 2px 4px rgba(59, 130, 246, 0.3); }
+        .btn-home:hover { background-color: #2563eb; transform: translateY(-2px); }
+        .btn-blog { background-color: #f59e0b; color: white; box-shadow: 0 2px 4px rgba(245, 158, 11, 0.3); }
+        .btn-blog:hover { background-color: #d97706; transform: translateY(-2px); }
+        .btn-order { background-color: var(--brand-primary); color: #fff; box-shadow: 0 4px 6px -1px rgba(5, 150, 105, 0.4); }
+        .btn-order:hover { background-color: #047857; transform: translateY(-2px); }
+        
+        @media (max-width: 480px) {
+            .floating-cta-wrapper { padding: 10px 12px; }
+            .floating-btn { font-size: 0.95rem; padding: 12px 4px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="layout-wrapper">
+        
+        <header class="page-header">
+            <h1 class="page-title">개인정보처리방침</h1>
+            <p class="page-desc">비아마켓의 개인정보 보호 및 처리 방침입니다.</p>
+        </header>
+
+        <main class="terms-content">
+            <p>비아마켓(이하 "회사"라 합니다)은 정보통신망 이용촉진 및 정보보호 등에 관한 법률, 개인정보보호법 등 관련 법령에 따라 이용자의 개인정보를 보호하고, 이와 관련한 고충을 신속하고 원활하게 처리할 수 있도록 하기 위하여 다음과 같이 개인정보처리방침을 수립·공개합니다.</p>
+
+            <h2>제1조 (개인정보의 수집 및 이용 목적)</h2>
+            <p>회사는 다음의 목적을 위하여 개인정보를 처리합니다. 처리하고 있는 개인정보는 다음의 목적 이외의 용도로는 이용되지 않으며, 이용 목적이 변경되는 경우에는 관련 법령에 따라 별도의 동의를 받는 등 필요한 조치를 이행할 예정입니다.</p>
+            <ol class="terms-list">
+                <li>서비스 제공 및 계약의 이행: 구매대행 서비스 제공, 물품 배송, 본인인증, 요금 결제 및 정산</li>
+                <li>고객 관리: 서비스 이용에 따른 본인확인, 불만 처리 및 고객 상담, 공지사항 전달</li>
+                <li>신규 서비스 및 마케팅 활용: 신규 서비스 개발, 맞춤형 서비스 제공, 이벤트 및 광고성 정보 제공(동의한 경우에 한함)</li>
+            </ol>
+
+            <h2>제2조 (수집하는 개인정보의 항목 및 수집 방법)</h2>
+            <p>회사는 서비스 제공을 위해 최소한의 범위 내에서 아래와 같이 개인정보를 수집하고 있습니다.</p>
+            <ol class="terms-list">
+                <li>수집 항목
+                    <ol>
+                        <li>필수 항목: 성명, 휴대전화 번호, 배송지 주소, 결제 정보</li>
+                        <li>자동 수집 항목: 서비스 이용 기록, 접속 로그, 쿠키(Cookie), 접속 IP 정보, 기기 정보</li>
+                    </ol>
+                </li>
+                <li>수집 방법: 홈페이지 웹문서, 서면 양식, 전화/팩스, 고객센터 문의, 협력회사로부터의 제공 등</li>
+            </ol>
+
+            <h2>제3조 (개인정보의 보유 및 이용 기간)</h2>
+            <p>회사는 법령에 따른 개인정보 보유·이용 기간 또는 이용자로부터 개인정보 수집 시에 동의 받은 개인정보 보유·이용 기간 내에서 개인정보를 처리 및 보유합니다. 원칙적으로 개인정보의 수집 및 이용 목적이 달성된 후에는 해당 정보를 지체 없이 파기합니다. 단, 다음의 정보에 대해서는 아래의 이유로 명시한 기간 동안 보존합니다.</p>
+            <ol class="terms-list">
+                <li>계약 또는 청약철회 등에 관한 기록: 5년 (전자상거래 등에서의 소비자보호에 관한 법률)</li>
+                <li>대금 결제 및 재화 등의 공급에 관한 기록: 5년 (전자상거래 등에서의 소비자보호에 관한 법률)</li>
+                <li>소비자의 불만 또는 분쟁 처리에 관한 기록: 3년 (전자상거래 등에서의 소비자보호에 관한 법률)</li>
+                <li>접속 로그, 접속 IP 정보 등: 3개월 (통신비밀보호법)</li>
+            </ol>
+
+            <h2>제4조 (개인정보의 파기절차 및 파기방법)</h2>
+            <p>회사는 원칙적으로 개인정보 처리 목적이 달성된 경우에는 지체 없이 해당 개인정보를 파기합니다. 파기의 절차, 기한 및 방법은 다음과 같습니다.</p>
+            <ol class="terms-list">
+                <li>파기 절차: 이용자가 입력한 정보는 목적 달성 후 별도의 DB에 옮겨져(종이의 경우 별도의 서류함) 내부 방침 및 기타 관련 법령에 따라 일정 기간 저장된 후 혹은 즉시 파기됩니다.</li>
+                <li>파기 방법: 전자적 파일 형태로 저장된 개인정보는 기록을 재생할 수 없는 기술적 방법을 사용하여 삭제하며, 종이 문서에 출력된 개인정보는 분쇄기로 분쇄하거나 소각하여 파기합니다.</li>
+            </ol>
+
+            <h2>제5조 (개인정보의 제3자 제공)</h2>
+            <p>회사는 원칙적으로 이용자의 개인정보를 제1조에서 명시한 범위 내에서 처리하며, 이용자의 사전 동의 없이는 본래의 범위를 초과하여 처리하거나 제3자에게 제공하지 않습니다. 다만, 다음의 경우는 예외로 합니다.</p>
+            <ol class="terms-list">
+                <li>이용자가 사전에 제3자 제공 및 공개에 동의한 경우</li>
+                <li>법령의 규정에 의거하거나, 수사 목적으로 법령에 정해진 절차와 방법에 따라 수사기관의 요구가 있는 경우</li>
+                <li>물품 배송 및 서비스 제공을 위해 배송 업체 등 업무 수탁자에게 필수적인 정보(성명, 연락처, 주소)를 제공하는 경우 (프라이버시 보호를 위해 안심번호 및 블라인드 처리 적용)</li>
+            </ol>
+
+            <h2>제6조 (이용자의 권리와 그 행사 방법)</h2>
+            <p>이용자는 언제든지 등록되어 있는 자신의 개인정보를 열람하거나 수정할 수 있으며, 정보 삭제 및 처리 정지를 요청할 수 있습니다. 개인정보 보호책임자에게 서면, 전화 또는 이메일로 연락하시면 지체 없이 조치하겠습니다.</p>
+
+            <h2>제7조 (개인정보 보호책임자)</h2>
+            <p>회사는 개인정보 처리에 관한 업무를 총괄해서 책임지고, 개인정보 처리와 관련한 정보주체의 불만 처리 및 피해 구제 등을 위하여 아래와 같이 개인정보 보호책임자를 지정하고 있습니다.</p>
+            <ol class="terms-list">
+                <li>개인정보 보호책임자: 비아마켓 관리자</li>
+                <li>이메일: privacy@viayakmarket.com</li>
+            </ol>
+
+            <p style="margin-top: 30px; font-weight: 600;">부칙</p>
+            <p>이 개인정보처리방침은 2026년 1월 1일부터 적용됩니다.</p>
+
+        </main>
+
+        <footer>
+            <div class="footer-links">
+                <a href="/terms">이용약관</a>
+                <a href="/privacy">개인정보처리방침</a>
+            </div>
+            <div class="footer-info">
+                <p><strong>비아마켓 (viayakmarket.com)</strong> | 대한민국 1위 비대면 진료 및 공식 정품 보장 <strong>센터</strong></p>
+                <p>본 사이트는 관련 법규를 준수하며, 안전하고 확실한 구매대행 서비스를 제공합니다.</p>
+            </div>
+            <p class="copyright">Copyright &copy; 2026 비아마켓. All rights reserved.</p>
+        </footer>
+
+        <div class="floating-cta-wrapper">
+            <div class="floating-btn-group">
+                <a href="/" class="floating-btn btn-home">🏠 홈</a>
+                <a href="/blog" class="floating-btn btn-blog">📝 건강칼럼</a>
+                <a href="/products" rel="noopener noreferrer" class="floating-btn btn-order">
+                    🛒 제품소개
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
