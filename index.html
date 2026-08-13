@@ -350,22 +350,38 @@
         .review-card .author { margin-top: auto; padding-top: 16px; font-size: 0.85rem; font-weight: 600; color: #6b7280; display: flex; flex-direction: column; gap: 8px; border-top: 1px dashed #e5e7eb; }
         .verified-badge { align-self: flex-start; background: #dbeafe; color: #2563eb; font-size: 0.75rem; padding: 4px 8px; border-radius: 4px; font-weight: bold; }
 
-        .faq-list { display: flex; flex-direction: column; gap: 16px; }
+        .faq-list { display: grid; gap: 20px; }
         .faq-item { 
-            background: #fff; border: 1px solid var(--border-light); 
-            border-radius: var(--radius-md); overflow: hidden; box-shadow: var(--shadow-sm); transition: all 0.3s; 
+            background: var(--surface); border: 1px solid var(--border-light); 
+            border-radius: var(--radius-lg); padding: 24px 28px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.03); border-left: 5px solid #8b5cf6; 
+            transition: all 0.3s ease; 
         }
-        .faq-item:hover { border-color: #8b5cf6; box-shadow: var(--shadow-md); }
+        .faq-item:hover { 
+            transform: translateX(5px); box-shadow: 0 8px 25px rgba(0,0,0,0.06); 
+            border-left-color: var(--brand-primary); border-color: var(--brand-primary-light);
+        }
         .faq-q { 
-            background: #f8fafc; padding: 20px 24px; font-weight: 700; color: var(--brand-dark); 
-            display: flex; gap: 12px; align-items: flex-start; font-size: 1.1rem; 
+            font-weight: 800; color: var(--brand-dark); font-size: 1.15rem; 
+            margin-bottom: 16px; display: flex; gap: 14px; align-items: flex-start; line-height: 1.4; 
         }
-        .faq-q::before { content: 'Q.'; color: #8b5cf6; font-weight: 900; font-size: 1.3rem; line-height: 1; }
+        .faq-q::before { 
+            content: 'Q'; display: flex; align-items: center; justify-content: center; 
+            flex-shrink: 0; width: 34px; height: 34px; background: #ede9fe; 
+            color: #8b5cf6; border-radius: 50%; font-size: 1.1rem; font-weight: 900; 
+        }
+        .faq-q span { flex: 1; margin-top: 3px; }
+
         .faq-a { 
-            padding: 20px 24px; color: var(--text-muted); display: flex; gap: 12px; 
-            border-top: 1px solid var(--border-light); background: #ffffff; 
+            color: var(--text-muted); font-size: 1rem; line-height: 1.65; 
+            display: flex; gap: 14px; align-items: flex-start; 
         }
-        .faq-a::before { content: 'A.'; color: var(--brand-primary); font-weight: 900; font-size: 1.3rem; line-height: 1; }
+        .faq-a::before { 
+            content: 'A'; display: flex; align-items: center; justify-content: center; 
+            flex-shrink: 0; width: 34px; height: 34px; background: var(--brand-primary-light); 
+            color: var(--brand-primary); border-radius: 50%; font-size: 1.1rem; font-weight: 900; margin-top: 2px;
+        }
+        .faq-a span { flex: 1; }
 
         footer {
             text-align: center; padding: 50px 24px 80px;
@@ -594,23 +610,23 @@
                 
                 <div class="faq-list">
                     <article class="faq-item">
-                        <div class="faq-q">비아그라와 시알리스의 확실한 정품 구매방법은 무엇인가요?</div>
-                        <div class="faq-a">가장 안전한 <strong>구매방법</strong>은 공식 <strong>비아센터</strong>와 연동된 전문 <strong>구매사이트</strong>인 '비아마켓'을 이용하시는 것입니다. 불법 채널을 피하고, 검증된 비대면 진료를 통해 100% <strong>정품</strong>을 안전하게 처방받으실 수 있습니다.</div>
+                        <div class="faq-q"><span>비아그라와 시알리스의 확실한 정품 구매방법은 무엇인가요?</span></div>
+                        <div class="faq-a"><span>가장 안전한 <strong>구매방법</strong>은 공식 <strong>비아센터</strong>와 연동된 전문 <strong>구매사이트</strong>인 '비아마켓'을 이용하시는 것입니다. 불법 채널을 피하고, 검증된 비대면 진료를 통해 100% <strong>정품</strong>을 안전하게 처방받으실 수 있습니다.</span></div>
                     </article>
 
                     <article class="faq-item">
-                        <div class="faq-q">디시 등 커뮤니티에서 유독 비아마켓을 추천하는 이유가 있나요?</div>
-                        <div class="faq-a">비아마켓은 지난 수년간 단 한 건의 가품 이슈도 없었던 철저한 <strong>정품</strong> 보장 시스템을 갖추고 있습니다. 투명한 운영과 확실한 약효 덕분에 <strong>디시</strong>인사이드 등 대형 커뮤니티 회원님들 사이에서 자발적인 <strong>후기</strong>와 추천이 끊이지 않는 신뢰도 1위 업체입니다.</div>
+                        <div class="faq-q"><span>디시 등 커뮤니티에서 유독 비아마켓을 추천하는 이유가 있나요?</span></div>
+                        <div class="faq-a"><span>비아마켓은 지난 수년간 단 한 건의 가품 이슈도 없었던 철저한 <strong>정품</strong> 보장 시스템을 갖추고 있습니다. 투명한 운영과 확실한 약효 덕분에 <strong>디시</strong>인사이드 등 대형 커뮤니티 회원님들 사이에서 자발적인 <strong>후기</strong>와 추천이 끊이지 않는 신뢰도 1위 업체입니다.</span></div>
                     </article>
 
                     <article class="faq-item">
-                        <div class="faq-q">무허가 해외 직구나 일반 구매대행 서비스와 무엇이 다른가요?</div>
-                        <div class="faq-a">일반적인 무허가 <strong>구매대행</strong>은 유통 경로가 불분명하여 가품 위험이 매우 높습니다. 하지만 비아마켓은 공식 <strong>센터</strong>의 엄격한 검수 및 인증 시스템을 거친 의약품만을 취급하는 프리미엄 직배송 서비스를 제공하므로 안심하셔도 됩니다.</div>
+                        <div class="faq-q"><span>무허가 해외 직구나 일반 구매대행 서비스와 무엇이 다른가요?</span></div>
+                        <div class="faq-a"><span>일반적인 무허가 <strong>구매대행</strong>은 유통 경로가 불분명하여 가품 위험이 매우 높습니다. 하지만 비아마켓은 공식 <strong>센터</strong>의 엄격한 검수 및 인증 시스템을 거친 의약품만을 취급하는 프리미엄 직배송 서비스를 제공하므로 안심하셔도 됩니다.</span></div>
                     </article>
 
                     <article class="faq-item">
-                        <div class="faq-q">비밀 배송이 보장되나요? 가족이 알까 봐 걱정됩니다.</div>
-                        <div class="faq-a">고객님의 프라이버시 보호를 최우선으로 합니다. 박스 겉면에 상품명을 절대 표기하지 않으며, 3중 블라인드 안심 포장을 통해 배송 기사나 가족 등 그 누구도 내용물을 유추할 수 없도록 완벽한 비밀 배송을 원칙으로 하고 있습니다.</div>
+                        <div class="faq-q"><span>비밀 배송이 보장되나요? 가족이 알까 봐 걱정됩니다.</span></div>
+                        <div class="faq-a"><span>고객님의 프라이버시 보호를 최우선으로 합니다. 박스 겉면에 상품명을 절대 표기하지 않으며, 3중 블라인드 안심 포장을 통해 배송 기사나 가족 등 그 누구도 내용물을 유추할 수 없도록 완벽한 비밀 배송을 원칙으로 하고 있습니다.</span></div>
                     </article>
                 </div>
             </section>
@@ -620,9 +636,8 @@
 
         <footer>
             <div class="footer-links">
-                <a href="#">이용약관</a>
-                <a href="#">개인정보처리방침</a>
-                <!-- 고객센터 삭제됨 -->
+                <a href="/terms">이용약관</a>
+                <a href="/privacy">개인정보처리방침</a>
             </div>
             <div class="footer-info">
                 <p><strong>비아마켓 (viayakmarket.com)</strong> | 대한민국 1위 비대면 진료 및 공식 정품 보장 <strong>센터</strong></p>
@@ -644,6 +659,5 @@
 
     </div>
 
-<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"0f5047943c2b4d74ae0e4738685264f3","r":1}' crossorigin="anonymous"></script>
 </body>
 </html>
