@@ -496,6 +496,225 @@
             .floating-cta-wrapper { padding: 10px 12px; }
             .floating-btn { font-size: 0.95rem; padding: 12px 4px; }
         }
+        /* ================= 최신 건강 칼럼 섹션 스타일 ================= */
+.latest-blog-section {
+    padding: 70px 16px;
+    background-color: #f8fafc;
+    border-top: 1px solid #e2e8f0;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.latest-blog-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.latest-blog-section .section-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.latest-blog-section .badge-sub {
+    display: inline-block;
+    background: #e0f2fe;
+    color: #0369a1;
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding: 4px 12px;
+    border-radius: 9999px;
+    margin-bottom: 12px;
+    letter-spacing: 0.05em;
+}
+
+.latest-blog-section .section-heading {
+    font-size: 1.85rem;
+    font-weight: 800;
+    color: #0f172a;
+    margin-bottom: 10px;
+    word-break: keep-all;
+}
+
+.latest-blog-section .section-desc {
+    font-size: 0.95rem;
+    color: #64748b;
+    word-break: keep-all;
+}
+
+/* 그리드 레이아웃 (PC 4열, 태블릿 2열, 모바일 1~2열) */
+.blog-card-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 35px;
+}
+
+.blog-item-card {
+    background: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border: 1px solid #edf2f7;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-item-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(14, 165, 233, 0.12);
+    border-color: #bae6fd;
+}
+
+.blog-item-card .card-link {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.blog-item-card .thumb-box {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 비율 */
+    background: #e2e8f0;
+    overflow: hidden;
+}
+
+.blog-item-card .thumb-box img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.35s ease;
+}
+
+.blog-item-card:hover .thumb-box img {
+    transform: scale(1.05);
+}
+
+/* 뱃지 */
+.tag-status {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 2;
+    padding: 3px 8px;
+    border-radius: 6px;
+    font-size: 0.72rem;
+    font-weight: 800;
+    color: #fff;
+}
+.tag-new { background: #ef4444; box-shadow: 0 2px 6px rgba(239, 68, 68, 0.4); }
+.tag-hot { background: #f97316; }
+
+.blog-item-card .card-content {
+    padding: 18px 16px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.blog-item-card .category-pill {
+    align-self: flex-start;
+    font-size: 0.72rem;
+    font-weight: 700;
+    color: #0284c7;
+    background: #f0f9ff;
+    padding: 2px 8px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.blog-item-card .card-title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #1e293b;
+    line-height: 1.45;
+    margin-bottom: 8px;
+    word-break: keep-all;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.blog-item-card .card-summary {
+    font-size: 0.85rem;
+    color: #64748b;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    word-break: keep-all;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.blog-item-card .card-footer {
+    margin-top: auto;
+    padding-top: 10px;
+    border-top: 1px dashed #f1f5f9;
+}
+
+.blog-item-card .read-more {
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: #0284c7;
+    transition: color 0.2s;
+}
+
+.blog-item-card:hover .read-more {
+    color: #0369a1;
+}
+
+/* 전체보기 버튼 */
+.more-blog-btn-wrap {
+    text-align: center;
+}
+
+.btn-all-columns {
+    display: inline-block;
+    padding: 12px 28px;
+    background: #ffffff;
+    color: #0284c7;
+    font-size: 0.95rem;
+    font-weight: 700;
+    border: 2px solid #0284c7;
+    border-radius: 9999px;
+    text-decoration: none;
+    transition: all 0.25s ease;
+    box-shadow: 0 4px 10px rgba(2, 132, 199, 0.08);
+}
+
+.btn-all-columns:hover {
+    background: #0284c7;
+    color: #ffffff;
+    box-shadow: 0 6px 16px rgba(2, 132, 199, 0.25);
+    transform: translateY(-2px);
+}
+
+/* 반응형 미디어 쿼리 */
+@media (max-width: 1024px) {
+    .blog-card-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .latest-blog-section {
+        padding: 50px 14px;
+    }
+    .blog-card-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    .latest-blog-section .section-heading {
+        font-size: 1.5rem;
+    }
+}
     </style>
 </head>
 <body>
